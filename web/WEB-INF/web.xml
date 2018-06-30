@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <servlet>   
+        <servlet-name>newbank</servlet-name>
+        <jsp-file>/BloodBank/newbank.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>newbank</servlet-name>
+      <url-pattern>/newbank</url-pattern>
+    </servlet-mapping>
+
+    <servlet>   
+        <servlet-name>addbank</servlet-name>
+        <jsp-file>/BloodBank/addbank.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+      <servlet-name>addbank</servlet-name>
+      <url-pattern>/addbank</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>banklogin</servlet-name>
+        <jsp-file>/BloodBank/banklogin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>banklogin</servlet-name>
+      <url-pattern>/banklogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>bdboard</servlet-name>
+        <jsp-file>/BloodBank/bdboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>bdboard</servlet-name>
+      <url-pattern>/bdboard</url-pattern>
+    </servlet-mapping>
+       
+    <!--BLOODBANK URLS-->
+    
+    
+    <!--Hospitals URLS-->
+    <servlet>   
+        <servlet-name>newhosp</servlet-name>
+        <jsp-file>/Hospital/newhosp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newhosp</servlet-name>
+        <url-pattern>/newhosp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>hosplogin</servlet-name>
+        <jsp-file>/Hospital/hosplogin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hosplogin</servlet-name>
+        <url-pattern>/hosplogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>hospaction</servlet-name>
+        <jsp-file>/Hospital/hospaction.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hospaction</servlet-name>
+        <url-pattern>/hospaction</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>hospboard</servlet-name>
+        <jsp-file>/Hospital/hospboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hospboard</servlet-name>
+        <url-pattern>/hospboard</url-pattern>
+    </servlet-mapping>
+    
+    <!--BLOODCAMP URLS-->
+    <servlet>   
+        <servlet-name>newcamp</servlet-name>
+        <jsp-file>/Bloodcamp/newcamp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newcamp</servlet-name>
+        <url-pattern>/newcamp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>camplogin</servlet-name>
+        <jsp-file>/Bloodcamp/camplogin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>camplogin</servlet-name>
+        <url-pattern>/camplogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>campaction</servlet-name>
+        <jsp-file>/Bloodcamp/campaction.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>campaction</servlet-name>
+        <url-pattern>/campaction</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>campboard</servlet-name>
+        <jsp-file>/Bloodcamp/campboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>campboard</servlet-name>
+        <url-pattern>/campboard</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <!--BLOODCAMP URLS-->
+    
+    <!--DONORURLS-->
+    
+    <servlet>   
+        <servlet-name>newdonor</servlet-name>
+        <jsp-file>/Donor/newdonor.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newdonor</servlet-name>
+        <url-pattern>/newdonor</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>donoraction</servlet-name>
+        <jsp-file>/Donor/donoraction.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>donoraction</servlet-name>
+        <url-pattern>/donoraction</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>donorlogin</servlet-name>
+        <jsp-file>/Donor/donorlogin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>donorlogin</servlet-name>
+        <url-pattern>/donorlogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>donorsetup</servlet-name>
+        <jsp-file>/Donor/donorsetup.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>donorsetup</servlet-name>
+        <url-pattern>/donorsetup</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!--DONORURLS-->
+    <!--BloodPacket URLS-->
+    <servlet>   
+        <servlet-name>newpacket</servlet-name>
+        <jsp-file>/BloodPacket/newpacket.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>newpacket</servlet-name>
+      <url-pattern>/newpacket</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>   
+        <servlet-name>packetaction</servlet-name>
+        <jsp-file>/BloodPacket/packetaction.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>packetaction</servlet-name>
+      <url-pattern>/packetaction</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!--BloodPacket URLS-->
+    <!--Hospital Request URLS-->
+    
+    <servlet>   
+        <servlet-name>requestaction</servlet-name>
+        <jsp-file>/BloodRequest/requestaction.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>requestaction</servlet-name>
+      <url-pattern>/requestaction</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>newrequest</servlet-name>
+        <jsp-file>/BloodRequest/newrequest.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>newrequest</servlet-name>
+      <url-pattern>/newrequest</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!--Hospital Request URLS-->
+    <!--OTHER MAPPINGS-->
+    <servlet>   
+        <servlet-name>Success</servlet-name>
+        <jsp-file>/Success.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>Success</servlet-name>
+      <url-pattern>/success</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>   
+        <servlet-name>Error</servlet-name>
+        <jsp-file>/Error.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>Error</servlet-name>
+      <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+</web-app>
